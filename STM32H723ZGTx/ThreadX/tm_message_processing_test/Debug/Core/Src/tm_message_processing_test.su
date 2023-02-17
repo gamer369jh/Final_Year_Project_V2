@@ -1,0 +1,4 @@
+../Core/Src/tm_message_processing_test.c:71:6:tm_main	8	static
+../Core/Src/tm_message_processing_test.c:81:7:tm_message_processing_initialize	8	static
+../Core/Src/tm_message_processing_test.c:101:7:tm_message_processing_thread_0_entry	8	static
+../Core/Src/tm_message_processing_test.c:132:7:tm_message_processing_thread_report	16	static

@@ -1,0 +1,5 @@
+../Core/Src/tm_interrupt_processing_test.c:75:6:tm_main	8	static
+../Core/Src/tm_interrupt_processing_test.c:85:7:tm_interrupt_processing_initialize	8	static
+../Core/Src/tm_interrupt_processing_test.c:106:7:tm_interrupt_thread_0_entry	16	static,ignoring_inline_asm
+../Core/Src/tm_interrupt_processing_test.c:147:7:tm_interrupt_handler	8	static
+../Core/Src/tm_interrupt_processing_test.c:159:7:tm_interrupt_thread_report	24	static

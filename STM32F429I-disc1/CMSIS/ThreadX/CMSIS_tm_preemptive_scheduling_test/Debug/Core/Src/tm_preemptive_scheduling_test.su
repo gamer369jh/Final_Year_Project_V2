@@ -1,0 +1,8 @@
+../Core/Src/tm_preemptive_scheduling_test.c:76:6:tm_main	8	static
+../Core/Src/tm_preemptive_scheduling_test.c:87:7:tm_preemptive_scheduling_initialize	8	static
+../Core/Src/tm_preemptive_scheduling_test.c:116:7:tm_preemptive_thread_0_entry	8	static
+../Core/Src/tm_preemptive_scheduling_test.c:134:7:tm_preemptive_thread_1_entry	8	static
+../Core/Src/tm_preemptive_scheduling_test.c:155:7:tm_preemptive_thread_2_entry	8	static
+../Core/Src/tm_preemptive_scheduling_test.c:177:7:tm_preemptive_thread_3_entry	8	static
+../Core/Src/tm_preemptive_scheduling_test.c:199:7:tm_preemptive_thread_4_entry	8	static
+../Core/Src/tm_preemptive_scheduling_test.c:215:7:tm_preemptive_thread_report	24	static

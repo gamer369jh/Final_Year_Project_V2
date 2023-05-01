@@ -1,0 +1,4 @@
+../Core/Src/tm_basic_processing_test.c:80:6:tm_main	8	static
+../Core/Src/tm_basic_processing_test.c:90:7:tm_basic_processing_initialize	8	static
+../Core/Src/tm_basic_processing_test.c:106:7:tm_basic_processing_thread_0_entry	16	static
+../Core/Src/tm_basic_processing_test.c:139:7:tm_basic_processing_thread_report	16	static

@@ -1,0 +1,15 @@
+../Core/Src/tm_porting_layer.c:65:6:tm_initialize	16	static
+../Core/Src/tm_porting_layer.c:78:5:tm_thread_create	160	static
+../Core/Src/tm_porting_layer.c:115:5:tm_thread_resume	16	static
+../Core/Src/tm_porting_layer.c:130:6:tm_thread_suspend	16	static
+../Core/Src/tm_porting_layer.c:144:6:tm_thread_relinquish	8	static
+../Core/Src/tm_porting_layer.c:153:6:tm_thread_sleep	16	static
+../Core/Src/tm_porting_layer.c:161:6:tm_queue_create	144	static
+../Core/Src/tm_porting_layer.c:186:6:tm_queue_send	24	static
+../Core/Src/tm_porting_layer.c:200:6:tm_queue_receive	32	static
+../Core/Src/tm_porting_layer.c:215:6:tm_semaphore_create	136	static
+../Core/Src/tm_porting_layer.c:240:6:tm_semaphore_get	24	static
+../Core/Src/tm_porting_layer.c:254:6:tm_semaphore_put	24	static
+../Core/Src/tm_porting_layer.c:270:6:tm_memory_pool_create	144	static
+../Core/Src/tm_porting_layer.c:296:6:tm_memory_pool_allocate	24	static
+../Core/Src/tm_porting_layer.c:314:6:tm_memory_pool_deallocate	24	static

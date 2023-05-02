@@ -24,7 +24,11 @@ SUBDIRS := \
 AZURE_RTOS/App \
 Core/Src \
 Core/Startup \
+Core/ThreadSafe \
+Drivers/CMSIS/RTOS2/Source \
+Drivers/CMSIS/RTOS2/Template \
 Drivers/STM32H7xx_HAL_Driver/Src \
+Middlewares/ST \
 Middlewares/ST/threadx/common/src \
 Middlewares/ST/threadx/ports/cortex_m7/gnu/src \
 Middlewares/ST/threadx/utility/low_power \

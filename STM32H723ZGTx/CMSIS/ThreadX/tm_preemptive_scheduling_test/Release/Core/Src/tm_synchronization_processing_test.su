@@ -1,0 +1,4 @@
+../Core/Src/tm_synchronization_processing_test.c:78:7:tm_synchronization_processing_initialize	8	static
+../Core/Src/tm_synchronization_processing_test.c:98:7:tm_synchronization_processing_thread_0_entry	8	static
+../Core/Src/tm_synchronization_processing_test.c:123:7:tm_synchronization_processing_thread_report	24	static
+../Core/Src/tm_synchronization_processing_test.c:68:6:tm_main	0	static

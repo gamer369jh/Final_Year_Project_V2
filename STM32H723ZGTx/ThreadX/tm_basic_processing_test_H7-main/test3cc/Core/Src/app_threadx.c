@@ -20,7 +20,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "app_threadx.h"
-#include "stdio.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -59,7 +59,6 @@
 UINT App_ThreadX_Init(VOID *memory_ptr)
 {
   UINT ret = TX_SUCCESS;
-
   /* USER CODE BEGIN App_ThreadX_MEM_POOL */
   printf("***This test is running on the STM32H723ZG Nucleo with ThreadX_RTOS *** \n\r");
   tm_main();

@@ -12,8 +12,8 @@ C_SRCS += \
 ../Core/Src/syscalls.c \
 ../Core/Src/sysmem.c \
 ../Core/Src/system_stm32h7xx.c \
-../Core/Src/tm_interrupt_processing_test.c \
-../Core/Src/tm_porting_layer.c 
+../Core/Src/tm_porting_layer.c \
+../Core/Src/tm_synchronization_processing_test.c 
 
 S_UPPER_SRCS += \
 ../Core/Src/tx_initialize_low_level.S 
@@ -26,8 +26,8 @@ OBJS += \
 ./Core/Src/syscalls.o \
 ./Core/Src/sysmem.o \
 ./Core/Src/system_stm32h7xx.o \
-./Core/Src/tm_interrupt_processing_test.o \
 ./Core/Src/tm_porting_layer.o \
+./Core/Src/tm_synchronization_processing_test.o \
 ./Core/Src/tx_initialize_low_level.o 
 
 S_UPPER_DEPS += \
@@ -41,8 +41,8 @@ C_DEPS += \
 ./Core/Src/syscalls.d \
 ./Core/Src/sysmem.d \
 ./Core/Src/system_stm32h7xx.d \
-./Core/Src/tm_interrupt_processing_test.d \
-./Core/Src/tm_porting_layer.d 
+./Core/Src/tm_porting_layer.d \
+./Core/Src/tm_synchronization_processing_test.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -54,7 +54,7 @@ Core/Src/%.o: ../Core/Src/%.S Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/app_threadx.d ./Core/Src/app_threadx.o ./Core/Src/app_threadx.su ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32h7xx_hal_msp.d ./Core/Src/stm32h7xx_hal_msp.o ./Core/Src/stm32h7xx_hal_msp.su ./Core/Src/stm32h7xx_it.d ./Core/Src/stm32h7xx_it.o ./Core/Src/stm32h7xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32h7xx.d ./Core/Src/system_stm32h7xx.o ./Core/Src/system_stm32h7xx.su ./Core/Src/tm_interrupt_processing_test.d ./Core/Src/tm_interrupt_processing_test.o ./Core/Src/tm_interrupt_processing_test.su ./Core/Src/tm_porting_layer.d ./Core/Src/tm_porting_layer.o ./Core/Src/tm_porting_layer.su ./Core/Src/tx_initialize_low_level.d ./Core/Src/tx_initialize_low_level.o
+	-$(RM) ./Core/Src/app_threadx.d ./Core/Src/app_threadx.o ./Core/Src/app_threadx.su ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32h7xx_hal_msp.d ./Core/Src/stm32h7xx_hal_msp.o ./Core/Src/stm32h7xx_hal_msp.su ./Core/Src/stm32h7xx_it.d ./Core/Src/stm32h7xx_it.o ./Core/Src/stm32h7xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32h7xx.d ./Core/Src/system_stm32h7xx.o ./Core/Src/system_stm32h7xx.su ./Core/Src/tm_porting_layer.d ./Core/Src/tm_porting_layer.o ./Core/Src/tm_porting_layer.su ./Core/Src/tm_synchronization_processing_test.d ./Core/Src/tm_synchronization_processing_test.o ./Core/Src/tm_synchronization_processing_test.su ./Core/Src/tx_initialize_low_level.d ./Core/Src/tx_initialize_low_level.o
 
 .PHONY: clean-Core-2f-Src
 

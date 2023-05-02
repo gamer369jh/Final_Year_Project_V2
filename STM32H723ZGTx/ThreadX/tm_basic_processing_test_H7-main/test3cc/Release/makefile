@@ -9,9 +9,14 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include Middlewares/ST/threadx/utility/low_power/subdir.mk
+-include Middlewares/ST/threadx/ports/cortex_m7/gnu/src/subdir.mk
+-include Middlewares/ST/threadx/common/src/subdir.mk
 -include Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk
+-include Core/ThreadSafe/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
+-include AZURE_RTOS/App/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -60,8 +65,8 @@ all: main-build
 main-build: test3cc.elf secondary-outputs
 
 # Tool invocations
-test3cc.elf test3cc.map: $(OBJS) $(USER_OBJS) C:\Users\MSI\Desktop\x-cube-azrtos-h7-main\Projects\NUCLEO-H723ZG\Applications\ThreadX\ThreadX\STM32H723ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "test3cc.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\MSI\Desktop\x-cube-azrtos-h7-main\Projects\NUCLEO-H723ZG\Applications\ThreadX\ThreadX\STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test3cc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+test3cc.elf test3cc.map: $(OBJS) $(USER_OBJS) C:\Users\MSI\Desktop\Final_Year_Project_V2\STM32H723ZGTx\ThreadX\tm_basic_processing_test_H7-main\test3cc\STM32H723ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "test3cc.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\MSI\Desktop\Final_Year_Project_V2\STM32H723ZGTx\ThreadX\tm_basic_processing_test_H7-main\test3cc\STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test3cc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -173,7 +173,15 @@
   * @retval None
   */
 void SystemInit (void)
-{
+{     // set the priority level for the SysTick interrupt
+
+
+    // set the priority level for other interrupts in the system as needed
+    // ...
+
+    // call the original SystemInit function to complete initialization
+
+
 #if defined (DATA_IN_D2_SRAM)
  __IO uint32_t tmpreg;
 #endif /* DATA_IN_D2_SRAM */
